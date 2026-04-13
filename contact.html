@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | UWG Campus Resource Hub</title>
+
+<link rel="stylesheet" href="project.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>UWG Campus Resource Hub</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="academic.html">Academic</a></li>
+<li><a href="wellness.html">Wellness</a></li>
+<li><a href="tech.html">Technology</a></li>
+<li><a href="career.html">Career</a></li>
+<li><a href="basicneeds.html">Basic Needs</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="hero">
+<h2>Contact Us</h2>
+<p>
+Have questions or suggestions? Fill out the form below.
+</p>
+</section>
+
+<section class="form-section">
+
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="type">Reason for Contact:</label>
+<select id="type" name="type">
+<option value="question">Question</option>
+<option value="feedback">Feedback</option>
+<option value="support">Support</option>
+</select>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>
+Student Project – Not an official University of West Georgia website.
+</p>
+</footer>
+
+</body>
+
+</html>
