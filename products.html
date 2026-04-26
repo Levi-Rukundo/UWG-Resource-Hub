@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products | UWG Campus Resource Hub</title>
+<link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+<header>
+<h1>UWG Campus Resource Hub</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="academic.html">Academic</a></li>
+<li><a href="wellness.html">Wellness</a></li>
+<li><a href="tech.html">Technology</a></li>
+<li><a href="career.html">Career</a></li>
+<li><a href="basicneeds.html">Basic Needs</a></li>
+<li><a href="products.html" class="active">Products</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section class="hero">
+<h2>Student Resource Products</h2>
+<p>Browse simple student-focused items that support organization, studying, and campus life.</p>
+</section>
+
+<section class="product-list">
+
+<!-- Product 1 -->
+<div class="product-row">
+  <img src="images/planner.jpg" alt="Study planner">
+
+  <div class="product-info">
+    <h3>Study Planner</h3>
+    <p>A simple planner for organizing assignments and schedules.</p>
+    <p><strong>Price: $5.00</strong></p>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="your-email@example.com">
+      <input type="hidden" name="item_name" value="Study Planner">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="add" value="1">
+      <input type="submit" value="Add to Cart">
+    </form>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-row">
+  <img src="images/notebook.jpg" alt="Campus notebook">
+
+  <div class="product-info">
+    <h3>Campus Notebook</h3>
+    <p>A notebook for notes, planning, and studying.</p>
+    <p><strong>Price: $4.00</strong></p>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="your-email@example.com">
+      <input type="hidden" name="item_name" value="Campus Notebook">
+      <input type="hidden" name="amount" value="4.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="add" value="1">
+      <input type="submit" value="Add to Cart">
+    </form>
+  </div>
+</div>
+
+<!-- Product 3 -->
+<div class="product-row">
+  <img src="images/tote.jpg" alt="Resource tote bag">
+
+  <div class="product-info">
+    <h3>Resource Tote Bag</h3>
+    <p>A reusable bag for books and student materials.</p>
+    <p><strong>Price: $8.00</strong></p>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="your-email@example.com">
+      <input type="hidden" name="item_name" value="Resource Tote Bag">
+      <input type="hidden" name="amount" value="8.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="add" value="1">
+      <input type="submit" value="Add to Cart">
+    </form>
+  </div>
+</div>
+
+</section>
+
+<!-- View Cart Button -->
+<div class="view-cart">
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <input type="hidden" name="cmd" value="_cart">
+    <input type="hidden" name="business" value="your-email@example.com">
+    <input type="hidden" name="display" value="1">
+    <input type="submit" value="View Cart">
+  </form>
+</div>
+
+</main>
+
+<footer>
+<p>Student Project – Not an official University of West Georgia website.</p>
+</footer>
+
+</body>
+</html>
