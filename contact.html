@@ -41,7 +41,7 @@ Have questions or suggestions? Fill out the form below.
 
 <section class="form-section">
 
-<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+<form method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
 
 <label for="name">Name:</label>
 <input type="text" id="name" name="name" required>
@@ -72,6 +72,22 @@ Have questions or suggestions? Fill out the form below.
 Student Project – Not an official University of West Georgia website.
 </p>
 </footer>
+
+<script>
+function validateForm() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || message === "") {
+    alert("Please complete all required fields before submitting the form.");
+    return false;
+  }
+
+  alert("Thank you! Your message has been submitted.");
+  return true;
+}
+</script>
 
 </body>
 
